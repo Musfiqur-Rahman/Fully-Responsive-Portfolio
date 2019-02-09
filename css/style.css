@@ -1,0 +1,98 @@
+*{
+	padding:0;
+	margin:0;
+}
+body{
+	font-family:sans-serif;
+}
+i{
+	font-size:2rem;
+}
+/* -- Home Part -- */
+#home .slider{
+	background-image:url('../images/banner.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	min-height:550px;
+	padding-top: 150px;
+}
+#home .btn:hover{
+	background-color:#e40404;
+}
+/* -- About me Part -- */
+
+/* -- Services Part -- */
+#sevice{
+	background-image:url('../images/serv.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+
+#sevice .custom-card{
+	background: rgba(107, 107, 107, 0.5411764705882353);
+}
+
+#sevice .custom-card:hover{
+	background:#2196F3;
+}
+
+/* -- Project Part -- */
+
+#projects .projects-button{
+	margin-top:145px;
+	
+}
+#projects .card .card-img-overlay{
+	position:absolute;
+    left: 10px;
+    right: 10px;
+    padding: 15px;
+    color: white;
+    text-transform: uppercase;
+	display:none;
+}
+#projects .card:hover .card-img-overlay{
+	display:block;
+}
+
+/* -- Review Part -- */
+#review{
+	background-image:url('../images/portfolio.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+/* -- Contact Part -- */
+#contact{
+	background-image:url('../images/contact2.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+}
+/* ====== Footer Part ======= */
+footer{
+	background-color:#6d6c6c;
+	padding:25px 0;
+	
+}
+
+#social a i{
+	font-size:1.25rem;
+	
+}
+#upper{
+	position:fixed;
+	right:25px;
+	bottom:25px;
+	padding-top:10px;
+	display:none;
+}
+#upper i{
+	font-size:1.85rem;
+	color:white;
+	background-color:#4a4747ad;
+	border-radius:100%
+}
+

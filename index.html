@@ -48,12 +48,44 @@
 					  <a class="nav-item nav-link text-info px-3 text-uppercase" href="#sevice">Sevice</a>
 					  <a class="nav-item nav-link text-info  px-3 text-uppercase" href="#projects">Projects</a>
 					  <a class="nav-item nav-link text-info  px-3 text-uppercase" href="#contact">Contact</a>
-					  <a href="#Login" class="nav-link px-3 text-uppercase btn btn-info text-white">Login</a>
+					  <a href="#Login" class="nav-link px-3 text-uppercase btn btn-info text-white" data-toggle="modal" data-target="#loginmodal">Login</a>
 					</div>
 				  </div>
 				</nav>
 			</div>
 		</header>
+	<!--Login Modals-->	
+			<div class="modal fade" id="loginmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+			  <div class="modal-dialog modal-dialog-centered" role="document">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="modal-body">
+					<form method="post" action="login.php">
+						  <div class="form-group">
+							<label for="exampleInputEmail1">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						  </div>
+						  <div class="form-group">
+							<label for="exampleInputPassword1">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						  </div>
+						  <div class="form-group form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label class="form-check-label" for="exampleCheck1">Remember Me</label>
+						  </div>
+						  <button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+						<p class="text-primary float-right">New User <a href="registration.php" class="text-danger"> Registration</a></p>
+				  </div>
+				</div>
+			  </div>
+			</div>
 		<main>
 		       <!-- Slider part-->
 			<section id="home">
@@ -418,12 +450,9 @@
 			</div>
 			
 		</footer>
-		<script>
-			
-		</script>
-		
+
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 		
